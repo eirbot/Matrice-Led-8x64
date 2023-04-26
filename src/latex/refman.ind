@@ -1,0 +1,104 @@
+\begin{theindex}
+
+  \item {aliens}
+    \subitem {pixel\_arts.cpp}, \hyperpage{10}
+  \item {amogus}
+    \subitem {pixel\_arts.cpp}, \hyperpage{10}
+
+  \indexspace
+
+  \item {battle\_aliens}
+    \subitem {pixel\_arts.cpp}, \hyperpage{11}
+  \item {buf\_alloc}
+    \subitem {functions.cpp}, \hyperpage{4}
+  \item {buf\_free}
+    \subitem {functions.cpp}, \hyperpage{5}
+  \item {buf\_init}
+    \subitem {functions.cpp}, \hyperpage{5}
+  \item {buf\_realloc}
+    \subitem {functions.cpp}, \hyperpage{5}
+
+  \indexspace
+
+  \item {caracters.cpp}, \hyperpage{3}
+  \item {clear\_matrix}
+    \subitem {functions.cpp}, \hyperpage{6}
+
+  \indexspace
+
+  \item {flicker}
+    \subitem {functions.cpp}, \hyperpage{6}
+  \item {functions.cpp}, \hyperpage{3}
+    \subitem {buf\_alloc}, \hyperpage{4}
+    \subitem {buf\_free}, \hyperpage{5}
+    \subitem {buf\_init}, \hyperpage{5}
+    \subitem {buf\_realloc}, \hyperpage{5}
+    \subitem {clear\_matrix}, \hyperpage{6}
+    \subitem {flicker}, \hyperpage{6}
+    \subitem {inversion}, \hyperpage{6}
+    \subitem {print\_on\_column}, \hyperpage{7}
+    \subitem {print\_with\_scroll}, \hyperpage{7}
+    \subitem {random\_stuffs}, \hyperpage{8}
+    \subitem {scrolling}, \hyperpage{8}
+    \subitem {scrolling\_reverse}, \hyperpage{8}
+    \subitem {test\_all\_points}, \hyperpage{8}
+
+  \indexspace
+
+  \item {inversion}
+    \subitem {functions.cpp}, \hyperpage{6}
+
+  \indexspace
+
+  \item {laser}
+    \subitem {pixel\_arts.cpp}, \hyperpage{11}
+
+  \indexspace
+
+  \item {main.cpp}, \hyperpage{9}
+
+  \indexspace
+
+  \item {noot}
+    \subitem {pixel\_arts.cpp}, \hyperpage{11}
+  \item {noot\_noot}
+    \subitem {pixel\_arts.cpp}, \hyperpage{11}
+
+  \indexspace
+
+  \item {pixel\_arts.cpp}, \hyperpage{9}
+    \subitem {aliens}, \hyperpage{10}
+    \subitem {amogus}, \hyperpage{10}
+    \subitem {battle\_aliens}, \hyperpage{11}
+    \subitem {laser}, \hyperpage{11}
+    \subitem {noot}, \hyperpage{11}
+    \subitem {noot\_noot}, \hyperpage{11}
+    \subitem {pokeball}, \hyperpage{12}
+    \subitem {sus}, \hyperpage{12}
+  \item {pokeball}
+    \subitem {pixel\_arts.cpp}, \hyperpage{12}
+  \item {print\_on\_column}
+    \subitem {functions.cpp}, \hyperpage{7}
+  \item {print\_with\_scroll}
+    \subitem {functions.cpp}, \hyperpage{7}
+
+  \indexspace
+
+  \item {random\_stuffs}
+    \subitem {functions.cpp}, \hyperpage{8}
+
+  \indexspace
+
+  \item {scrolling}
+    \subitem {functions.cpp}, \hyperpage{8}
+  \item {scrolling\_reverse}
+    \subitem {functions.cpp}, \hyperpage{8}
+  \item {sus}
+    \subitem {pixel\_arts.cpp}, \hyperpage{12}
+
+  \indexspace
+
+  \item {test\_all\_points}
+    \subitem {functions.cpp}, \hyperpage{8}
+
+\end{theindex}

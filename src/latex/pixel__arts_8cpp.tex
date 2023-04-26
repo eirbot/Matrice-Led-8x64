@@ -1,0 +1,155 @@
+\hypertarget{pixel__arts_8cpp}{}\doxysection{pixel\+\_\+arts.\+cpp File Reference}
+\label{pixel__arts_8cpp}\index{pixel\_arts.cpp@{pixel\_arts.cpp}}
+{\ttfamily \#include $<$MD\+\_\+\+MAX72xx.\+h$>$}\newline
+{\ttfamily \#include $<$SPI.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}pixel\+\_\+arts.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}caracters.\+hpp\char`\"{}}\newline
+Include dependency graph for pixel\+\_\+arts.\+cpp\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int $\ast$ \mbox{\hyperlink{pixel__arts_8cpp_a564fce607c0b38690e84fde39a5ebe98}{pokeball}} ()
+\begin{DoxyCompactList}\small\item\em Function that returns the draw of a pokeball. \end{DoxyCompactList}\item 
+int $\ast$ \mbox{\hyperlink{pixel__arts_8cpp_a4c1af785c8bd8058517810761cd11e22}{laser}} (int length)
+\begin{DoxyCompactList}\small\item\em Function that returns the drawing of a laser. \end{DoxyCompactList}\item 
+int $\ast$ \mbox{\hyperlink{pixel__arts_8cpp_a40006d167a7b860b80b0e8db4a7bdd69}{aliens}} (int type)
+\begin{DoxyCompactList}\small\item\em Function that returns the drawing of an alien. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{pixel__arts_8cpp_a65fbd6f9294bfefcfbe46f273e034fb2}{battle\+\_\+aliens}} (MD\+\_\+\+MAX72\+XX $\ast$M)
+\begin{DoxyCompactList}\small\item\em Function that generates a battle between alien 1 and 2, they will shoot 5x3 laser alternatively until a winner is randomly chosen. \end{DoxyCompactList}\item 
+int $\ast$ \mbox{\hyperlink{pixel__arts_8cpp_a0110738f23b3a3ed2516606b3764e947}{amogus}} ()
+\begin{DoxyCompactList}\small\item\em Function that returns the drawing of a crew member of a famous game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{pixel__arts_8cpp_a4a195a74ba83dd1a7171f53df9cfcf69}{sus}} (MD\+\_\+\+MAX72\+XX $\ast$M)
+\begin{DoxyCompactList}\small\item\em Function that draws a famous crew with his iconic line. \end{DoxyCompactList}\item 
+int $\ast$ \mbox{\hyperlink{pixel__arts_8cpp_a86a1465638730f391798d4192cdf9223}{noot}} ()
+\begin{DoxyCompactList}\small\item\em function that returns the drawing of a famous penguin \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{pixel__arts_8cpp_a9b9cc93ade337d6aefe9f6fa318eda8d}{noot\+\_\+noot}} (MD\+\_\+\+MAX72\+XX $\ast$M)
+\begin{DoxyCompactList}\small\item\em Function that draws a famous penguin and his line. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+File in which there are functions that generates and draws some pixel-\/arts for/on a MD\+\_\+\+MAX72\+XX display 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{pixel__arts_8cpp_a40006d167a7b860b80b0e8db4a7bdd69}\label{pixel__arts_8cpp_a40006d167a7b860b80b0e8db4a7bdd69}} 
+\index{pixel\_arts.cpp@{pixel\_arts.cpp}!aliens@{aliens}}
+\index{aliens@{aliens}!pixel\_arts.cpp@{pixel\_arts.cpp}}
+\doxysubsubsection{\texorpdfstring{aliens()}{aliens()}}
+{\footnotesize\ttfamily int$\ast$ aliens (\begin{DoxyParamCaption}\item[{int}]{type }\end{DoxyParamCaption})}
+
+
+
+Function that returns the drawing of an alien. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & the type of the alien, 1 or 2 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int$\ast$ the buffer that stores the datas of the alien drawing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{pixel__arts_8cpp_a0110738f23b3a3ed2516606b3764e947}\label{pixel__arts_8cpp_a0110738f23b3a3ed2516606b3764e947}} 
+\index{pixel\_arts.cpp@{pixel\_arts.cpp}!amogus@{amogus}}
+\index{amogus@{amogus}!pixel\_arts.cpp@{pixel\_arts.cpp}}
+\doxysubsubsection{\texorpdfstring{amogus()}{amogus()}}
+{\footnotesize\ttfamily int$\ast$ amogus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function that returns the drawing of a crew member of a famous game. 
+
+\begin{DoxyReturn}{Returns}
+int$\ast$ the buffer that stores the datas of the crew member 
+\end{DoxyReturn}
+\mbox{\Hypertarget{pixel__arts_8cpp_a65fbd6f9294bfefcfbe46f273e034fb2}\label{pixel__arts_8cpp_a65fbd6f9294bfefcfbe46f273e034fb2}} 
+\index{pixel\_arts.cpp@{pixel\_arts.cpp}!battle\_aliens@{battle\_aliens}}
+\index{battle\_aliens@{battle\_aliens}!pixel\_arts.cpp@{pixel\_arts.cpp}}
+\doxysubsubsection{\texorpdfstring{battle\_aliens()}{battle\_aliens()}}
+{\footnotesize\ttfamily void battle\+\_\+aliens (\begin{DoxyParamCaption}\item[{MD\+\_\+\+MAX72\+XX $\ast$}]{M }\end{DoxyParamCaption})}
+
+
+
+Function that generates a battle between alien 1 and 2, they will shoot 5x3 laser alternatively until a winner is randomly chosen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em M} & a MD\+\_\+\+MAX72\+XX$\ast$ that referes to the MD\+\_\+\+MAX72\+XX display in which the battle will be displayed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{pixel__arts_8cpp_a4c1af785c8bd8058517810761cd11e22}\label{pixel__arts_8cpp_a4c1af785c8bd8058517810761cd11e22}} 
+\index{pixel\_arts.cpp@{pixel\_arts.cpp}!laser@{laser}}
+\index{laser@{laser}!pixel\_arts.cpp@{pixel\_arts.cpp}}
+\doxysubsubsection{\texorpdfstring{laser()}{laser()}}
+{\footnotesize\ttfamily int$\ast$ laser (\begin{DoxyParamCaption}\item[{int}]{length }\end{DoxyParamCaption})}
+
+
+
+Function that returns the drawing of a laser. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em length} & the lenght of the 3xlenght laser \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int$\ast$ the buffer that stores the datas of the laser drawing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{pixel__arts_8cpp_a86a1465638730f391798d4192cdf9223}\label{pixel__arts_8cpp_a86a1465638730f391798d4192cdf9223}} 
+\index{pixel\_arts.cpp@{pixel\_arts.cpp}!noot@{noot}}
+\index{noot@{noot}!pixel\_arts.cpp@{pixel\_arts.cpp}}
+\doxysubsubsection{\texorpdfstring{noot()}{noot()}}
+{\footnotesize\ttfamily int$\ast$ noot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+function that returns the drawing of a famous penguin 
+
+\begin{DoxyReturn}{Returns}
+int$\ast$ the buffer that stores the datas of the crew penguin 
+\end{DoxyReturn}
+\mbox{\Hypertarget{pixel__arts_8cpp_a9b9cc93ade337d6aefe9f6fa318eda8d}\label{pixel__arts_8cpp_a9b9cc93ade337d6aefe9f6fa318eda8d}} 
+\index{pixel\_arts.cpp@{pixel\_arts.cpp}!noot\_noot@{noot\_noot}}
+\index{noot\_noot@{noot\_noot}!pixel\_arts.cpp@{pixel\_arts.cpp}}
+\doxysubsubsection{\texorpdfstring{noot\_noot()}{noot\_noot()}}
+{\footnotesize\ttfamily void noot\+\_\+noot (\begin{DoxyParamCaption}\item[{MD\+\_\+\+MAX72\+XX $\ast$}]{M }\end{DoxyParamCaption})}
+
+
+
+Function that draws a famous penguin and his line. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em M} & a MD\+\_\+\+MAX72\+XX$\ast$ that referes to the MD\+\_\+\+MAX72\+XX display in which this will be displayed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{pixel__arts_8cpp_a564fce607c0b38690e84fde39a5ebe98}\label{pixel__arts_8cpp_a564fce607c0b38690e84fde39a5ebe98}} 
+\index{pixel\_arts.cpp@{pixel\_arts.cpp}!pokeball@{pokeball}}
+\index{pokeball@{pokeball}!pixel\_arts.cpp@{pixel\_arts.cpp}}
+\doxysubsubsection{\texorpdfstring{pokeball()}{pokeball()}}
+{\footnotesize\ttfamily int$\ast$ pokeball (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function that returns the draw of a pokeball. 
+
+\begin{DoxyReturn}{Returns}
+int$\ast$ the buffer that stores the datas of the drawing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{pixel__arts_8cpp_a4a195a74ba83dd1a7171f53df9cfcf69}\label{pixel__arts_8cpp_a4a195a74ba83dd1a7171f53df9cfcf69}} 
+\index{pixel\_arts.cpp@{pixel\_arts.cpp}!sus@{sus}}
+\index{sus@{sus}!pixel\_arts.cpp@{pixel\_arts.cpp}}
+\doxysubsubsection{\texorpdfstring{sus()}{sus()}}
+{\footnotesize\ttfamily void sus (\begin{DoxyParamCaption}\item[{MD\+\_\+\+MAX72\+XX $\ast$}]{M }\end{DoxyParamCaption})}
+
+
+
+Function that draws a famous crew with his iconic line. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em M} & a MD\+\_\+\+MAX72\+XX$\ast$ that referes to the MD\+\_\+\+MAX72\+XX display in which this will be displayed \\
+\hline
+\end{DoxyParams}

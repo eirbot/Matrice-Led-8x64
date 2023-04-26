@@ -1,0 +1,295 @@
+\hypertarget{functions_8cpp}{}\doxysection{functions.\+cpp File Reference}
+\label{functions_8cpp}\index{functions.cpp@{functions.cpp}}
+{\ttfamily \#include \char`\"{}functions.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}caracters.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}pixel\+\_\+arts.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$MD\+\_\+\+MAX72xx.\+h$>$}\newline
+{\ttfamily \#include $<$SPI.\+h$>$}\newline
+Include dependency graph for functions.\+cpp\+:
+% FIG 0
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{functions_8cpp_a46840f95c21d7b55622427b0beb44da0}\label{functions_8cpp_a46840f95c21d7b55622427b0beb44da0}} 
+\#define \mbox{\hyperlink{functions_8cpp_a46840f95c21d7b55622427b0beb44da0}{BASE\+\_\+\+DELAY}}~70
+\begin{DoxyCompactList}\small\item\em Define the base delay used when scrolling is applied on the display. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{functions_8cpp_a50fa0d2f791c42cb33d9c6f72e2548b6}\label{functions_8cpp_a50fa0d2f791c42cb33d9c6f72e2548b6}} 
+\#define \mbox{\hyperlink{functions_8cpp_a50fa0d2f791c42cb33d9c6f72e2548b6}{FLICKER\+\_\+\+DELAY}}~50
+\begin{DoxyCompactList}\small\item\em Define the delay used when flicker is applied on the display. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{functions_8cpp_a644f9b4a5428a5a24563c475ef258d76}\label{functions_8cpp_a644f9b4a5428a5a24563c475ef258d76}} 
+\#define \mbox{\hyperlink{functions_8cpp_a644f9b4a5428a5a24563c475ef258d76}{INVERSION\+\_\+\+DELAY}}~500
+\begin{DoxyCompactList}\small\item\em Define the dalay used when pixel inversion is applied on the display. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{functions_8cpp_a7b17e6ca45552d093f7221f5551d4bdb}{test\+\_\+all\+\_\+points}} (MD\+\_\+\+MAX72\+XX $\ast$M)
+\begin{DoxyCompactList}\small\item\em This fonction tests all dots of the displat starting from line 0 and column 0. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{functions_8cpp_a33509ab8913e36841ba55272297503ac}{scrolling}} (MD\+\_\+\+MAX72\+XX $\ast$M, int c\+\_\+min, int c\+\_\+max)
+\begin{DoxyCompactList}\small\item\em Function that applies one in which one iteration of right to left scrolling on an MD\+\_\+\+MAX72\+XX display. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{functions_8cpp_a380e66e7936f049149791603162df87b}{scrolling\+\_\+reverse}} (MD\+\_\+\+MAX72\+XX $\ast$M, int c\+\_\+min, int c\+\_\+max)
+\begin{DoxyCompactList}\small\item\em Function that applies one in which one iteration of right to left scrolling on a MD\+\_\+\+MAX72\+XX display. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{functions_8cpp_a0fe4afc327273436a1504b8a2fbdda01}\label{functions_8cpp_a0fe4afc327273436a1504b8a2fbdda01}} 
+int {\bfseries test\+\_\+column} (MD\+\_\+\+MAX72\+XX $\ast$M, int c)
+\item 
+void \mbox{\hyperlink{functions_8cpp_a52b8d4664895a0d1fa1cc46a30bc976a}{inversion}} (MD\+\_\+\+MAX72\+XX $\ast$M, int l\+\_\+min, int l\+\_\+max, int c\+\_\+min, int c\+\_\+max)
+\begin{DoxyCompactList}\small\item\em Function that does one iteration of inversion of pixels on a MD\+\_\+\+MAX72\+XX display. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{functions_8cpp_a0bd8776a09af081ff7a40027ee9b4447}{flicker}} (MD\+\_\+\+MAX72\+XX $\ast$M, int c\+\_\+min, int c\+\_\+max)
+\begin{DoxyCompactList}\small\item\em Function that makes the display flicker one time. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{functions_8cpp_a011665d557f35fcd8c7f0a1878329091}{print\+\_\+with\+\_\+scroll}} (MD\+\_\+\+MAX72\+XX $\ast$M, int $\ast$buf, int way, int c\+\_\+min, int c\+\_\+max)
+\begin{DoxyCompactList}\small\item\em Function that prints a buffer on a display in scrooling mod. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{functions_8cpp_a2f5fa4bcfb44ebca6300c1bdc6ea6451}{print\+\_\+on\+\_\+column}} (MD\+\_\+\+MAX72\+XX $\ast$M, int $\ast$buf, int c)
+\begin{DoxyCompactList}\small\item\em Function that prints a buffer on a display in fixed mod. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{functions_8cpp_a8fd625e94414e56a4d48cde31e5fdb85}{clear\+\_\+matrix}} (MD\+\_\+\+MAX72\+XX $\ast$M, int c\+\_\+min, int c\+\_\+max)
+\begin{DoxyCompactList}\small\item\em Function that clears the display. \end{DoxyCompactList}\item 
+int $\ast$ \mbox{\hyperlink{functions_8cpp_ad7c40783ca98412d9cad0730d5bdc53e}{buf\+\_\+alloc}} (int width)
+\begin{DoxyCompactList}\small\item\em Function that allocates dynamically a buffer of size 8$\ast$width$\ast$sizeof(int) + 1, this correspond to the datas of a drawing of a size of width column and his size. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{functions_8cpp_a324784a866866e04076113c73240ddc0}{buf\+\_\+realloc}} (int $\ast$buffer, int width)
+\begin{DoxyCompactList}\small\item\em Function that changes the size of the dynamically allocated buffer to 8$\ast$width$\ast$sizeof(int) + 1. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{functions_8cpp_a19348c209ea25a1df2aafe83229c370a}{buf\+\_\+init}} (int $\ast$buf, int width)
+\begin{DoxyCompactList}\small\item\em Function that entirely sets a buffer to 0. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{functions_8cpp_a049c253a4cda48f0642912cfefbf3015}{buf\+\_\+free}} (int $\ast$buf)
+\begin{DoxyCompactList}\small\item\em Function that frees the memory associated with the buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{functions_8cpp_af453485df8967e985cd32d810f100c84}{random\+\_\+stuffs}} (MD\+\_\+\+MAX72\+XX $\ast$M)
+\begin{DoxyCompactList}\small\item\em Function that displays random stuffs on the display based on functions implemented in \mbox{\hyperlink{caracters_8cpp}{caracters.\+cpp}} and \mbox{\hyperlink{pixel__arts_8cpp}{pixel\+\_\+arts.\+cpp}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+File in which there are functions for general manipulation for a MD\+\_\+\+MAX72\+XX display 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{functions_8cpp_ad7c40783ca98412d9cad0730d5bdc53e}\label{functions_8cpp_ad7c40783ca98412d9cad0730d5bdc53e}} 
+\index{functions.cpp@{functions.cpp}!buf\_alloc@{buf\_alloc}}
+\index{buf\_alloc@{buf\_alloc}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{buf\_alloc()}{buf\_alloc()}}
+{\footnotesize\ttfamily int$\ast$ buf\+\_\+alloc (\begin{DoxyParamCaption}\item[{int}]{width }\end{DoxyParamCaption})}
+
+
+
+Function that allocates dynamically a buffer of size 8$\ast$width$\ast$sizeof(int) + 1, this correspond to the datas of a drawing of a size of width column and his size. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & the maximun width that can be use to draw (typically the number of column of the drawing) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int$\ast$ the buffer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8cpp_a049c253a4cda48f0642912cfefbf3015}\label{functions_8cpp_a049c253a4cda48f0642912cfefbf3015}} 
+\index{functions.cpp@{functions.cpp}!buf\_free@{buf\_free}}
+\index{buf\_free@{buf\_free}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{buf\_free()}{buf\_free()}}
+{\footnotesize\ttfamily void buf\+\_\+free (\begin{DoxyParamCaption}\item[{int $\ast$}]{buf }\end{DoxyParamCaption})}
+
+
+
+Function that frees the memory associated with the buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buf} & the buffer that will be freed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{functions_8cpp_a19348c209ea25a1df2aafe83229c370a}\label{functions_8cpp_a19348c209ea25a1df2aafe83229c370a}} 
+\index{functions.cpp@{functions.cpp}!buf\_init@{buf\_init}}
+\index{buf\_init@{buf\_init}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{buf\_init()}{buf\_init()}}
+{\footnotesize\ttfamily void buf\+\_\+init (\begin{DoxyParamCaption}\item[{int $\ast$}]{buf,  }\item[{int}]{width }\end{DoxyParamCaption})}
+
+
+
+Function that entirely sets a buffer to 0. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buf} & the buffer that will be set to 0 \\
+\hline
+{\em width} & the size of the buffer that will be stores in buf\mbox{[}0\mbox{]} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{functions_8cpp_a324784a866866e04076113c73240ddc0}\label{functions_8cpp_a324784a866866e04076113c73240ddc0}} 
+\index{functions.cpp@{functions.cpp}!buf\_realloc@{buf\_realloc}}
+\index{buf\_realloc@{buf\_realloc}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{buf\_realloc()}{buf\_realloc()}}
+{\footnotesize\ttfamily void buf\+\_\+realloc (\begin{DoxyParamCaption}\item[{int $\ast$}]{buffer,  }\item[{int}]{width }\end{DoxyParamCaption})}
+
+
+
+Function that changes the size of the dynamically allocated buffer to 8$\ast$width$\ast$sizeof(int) + 1. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & the buffer which will be reallocated \\
+\hline
+{\em width} & the maximun width that can be use to draw (typically the number of column of the drawing) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{functions_8cpp_a8fd625e94414e56a4d48cde31e5fdb85}\label{functions_8cpp_a8fd625e94414e56a4d48cde31e5fdb85}} 
+\index{functions.cpp@{functions.cpp}!clear\_matrix@{clear\_matrix}}
+\index{clear\_matrix@{clear\_matrix}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{clear\_matrix()}{clear\_matrix()}}
+{\footnotesize\ttfamily void clear\+\_\+matrix (\begin{DoxyParamCaption}\item[{MD\+\_\+\+MAX72\+XX $\ast$}]{M,  }\item[{int}]{c\+\_\+min,  }\item[{int}]{c\+\_\+max }\end{DoxyParamCaption})}
+
+
+
+Function that clears the display. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em M} & a MD\+\_\+\+MAX72\+XX$\ast$ that referes to the MD\+\_\+\+MAX72\+XX display that will be cleared \\
+\hline
+{\em c\+\_\+min} & the minimum column from which the erasure will begin \\
+\hline
+{\em c\+\_\+max} & the maximum column from which the erasure will end \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{functions_8cpp_a0bd8776a09af081ff7a40027ee9b4447}\label{functions_8cpp_a0bd8776a09af081ff7a40027ee9b4447}} 
+\index{functions.cpp@{functions.cpp}!flicker@{flicker}}
+\index{flicker@{flicker}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{flicker()}{flicker()}}
+{\footnotesize\ttfamily void flicker (\begin{DoxyParamCaption}\item[{MD\+\_\+\+MAX72\+XX $\ast$}]{M,  }\item[{int}]{c\+\_\+min,  }\item[{int}]{c\+\_\+max }\end{DoxyParamCaption})}
+
+
+
+Function that makes the display flicker one time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em M} & a MD\+\_\+\+MAX72\+XX$\ast$ that referes to the MD\+\_\+\+MAX72\+XX display that will flicker \\
+\hline
+{\em c\+\_\+min} & the minimun column in which the flicker will occur \\
+\hline
+{\em c\+\_\+max} & the maximun column in which the flicker will occur \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{functions_8cpp_a52b8d4664895a0d1fa1cc46a30bc976a}\label{functions_8cpp_a52b8d4664895a0d1fa1cc46a30bc976a}} 
+\index{functions.cpp@{functions.cpp}!inversion@{inversion}}
+\index{inversion@{inversion}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{inversion()}{inversion()}}
+{\footnotesize\ttfamily void inversion (\begin{DoxyParamCaption}\item[{MD\+\_\+\+MAX72\+XX $\ast$}]{M,  }\item[{int}]{l\+\_\+min,  }\item[{int}]{l\+\_\+max,  }\item[{int}]{c\+\_\+min,  }\item[{int}]{c\+\_\+max }\end{DoxyParamCaption})}
+
+
+
+Function that does one iteration of inversion of pixels on a MD\+\_\+\+MAX72\+XX display. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em M} & a MD\+\_\+\+MAX72\+XX$\ast$ that referes to the MD\+\_\+\+MAX72\+XX display in which the inversion is applied \\
+\hline
+{\em l\+\_\+min} & the minimun line in which the inversion will be applied \\
+\hline
+{\em l\+\_\+max} & the maximun line in which the inversion will be applied \\
+\hline
+{\em c\+\_\+min} & the minimun column in which the inversion will be applied \\
+\hline
+{\em c\+\_\+max} & the maximun column in which the inversion will be applied \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{functions_8cpp_a2f5fa4bcfb44ebca6300c1bdc6ea6451}\label{functions_8cpp_a2f5fa4bcfb44ebca6300c1bdc6ea6451}} 
+\index{functions.cpp@{functions.cpp}!print\_on\_column@{print\_on\_column}}
+\index{print\_on\_column@{print\_on\_column}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{print\_on\_column()}{print\_on\_column()}}
+{\footnotesize\ttfamily void print\+\_\+on\+\_\+column (\begin{DoxyParamCaption}\item[{MD\+\_\+\+MAX72\+XX $\ast$}]{M,  }\item[{int $\ast$}]{buf,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+Function that prints a buffer on a display in fixed mod. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em M} & a MD\+\_\+\+MAX72\+XX$\ast$ that referes to the MD\+\_\+\+MAX72\+XX display in which the buffer will be print out \\
+\hline
+{\em buf} & a buffer that stores the datas that will be print out \\
+\hline
+{\em c} & the column from which the display of datas will begin \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{functions_8cpp_a011665d557f35fcd8c7f0a1878329091}\label{functions_8cpp_a011665d557f35fcd8c7f0a1878329091}} 
+\index{functions.cpp@{functions.cpp}!print\_with\_scroll@{print\_with\_scroll}}
+\index{print\_with\_scroll@{print\_with\_scroll}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{print\_with\_scroll()}{print\_with\_scroll()}}
+{\footnotesize\ttfamily void print\+\_\+with\+\_\+scroll (\begin{DoxyParamCaption}\item[{MD\+\_\+\+MAX72\+XX $\ast$}]{M,  }\item[{int $\ast$}]{buf,  }\item[{int}]{way,  }\item[{int}]{c\+\_\+min,  }\item[{int}]{c\+\_\+max }\end{DoxyParamCaption})}
+
+
+
+Function that prints a buffer on a display in scrooling mod. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em M} & a MD\+\_\+\+MAX72\+XX$\ast$ that referes to the MD\+\_\+\+MAX72\+XX display in which the buffer will be print out \\
+\hline
+{\em buf} & a buffer that stores the datas that will be print out \\
+\hline
+{\em way} & the way a the scroll \\
+\hline
+{\em c\+\_\+min} & the minimum column of the scroll \\
+\hline
+{\em c\+\_\+max} & the maximum column of the scroll \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{functions_8cpp_af453485df8967e985cd32d810f100c84}\label{functions_8cpp_af453485df8967e985cd32d810f100c84}} 
+\index{functions.cpp@{functions.cpp}!random\_stuffs@{random\_stuffs}}
+\index{random\_stuffs@{random\_stuffs}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{random\_stuffs()}{random\_stuffs()}}
+{\footnotesize\ttfamily void random\+\_\+stuffs (\begin{DoxyParamCaption}\item[{MD\+\_\+\+MAX72\+XX $\ast$}]{M }\end{DoxyParamCaption})}
+
+
+
+Function that displays random stuffs on the display based on functions implemented in \mbox{\hyperlink{caracters_8cpp}{caracters.\+cpp}} and \mbox{\hyperlink{pixel__arts_8cpp}{pixel\+\_\+arts.\+cpp}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em M} & a MD\+\_\+\+MAX72\+XX$\ast$ that referes to the MD\+\_\+\+MAX72\+XX display in which this will be displayed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{functions_8cpp_a33509ab8913e36841ba55272297503ac}\label{functions_8cpp_a33509ab8913e36841ba55272297503ac}} 
+\index{functions.cpp@{functions.cpp}!scrolling@{scrolling}}
+\index{scrolling@{scrolling}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{scrolling()}{scrolling()}}
+{\footnotesize\ttfamily void scrolling (\begin{DoxyParamCaption}\item[{MD\+\_\+\+MAX72\+XX $\ast$}]{M,  }\item[{int}]{c\+\_\+min,  }\item[{int}]{c\+\_\+max }\end{DoxyParamCaption})}
+
+
+
+Function that applies one in which one iteration of right to left scrolling on an MD\+\_\+\+MAX72\+XX display. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em M} & a MD\+\_\+\+MAX72\+XX$\ast$ that referes to the MD\+\_\+\+MAX72\+XX display in which the scrooling is applied on \\
+\hline
+{\em c\+\_\+max} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{functions_8cpp_a380e66e7936f049149791603162df87b}\label{functions_8cpp_a380e66e7936f049149791603162df87b}} 
+\index{functions.cpp@{functions.cpp}!scrolling\_reverse@{scrolling\_reverse}}
+\index{scrolling\_reverse@{scrolling\_reverse}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{scrolling\_reverse()}{scrolling\_reverse()}}
+{\footnotesize\ttfamily void scrolling\+\_\+reverse (\begin{DoxyParamCaption}\item[{MD\+\_\+\+MAX72\+XX $\ast$}]{M,  }\item[{int}]{c\+\_\+min,  }\item[{int}]{c\+\_\+max }\end{DoxyParamCaption})}
+
+
+
+Function that applies one in which one iteration of right to left scrolling on a MD\+\_\+\+MAX72\+XX display. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em M} & a MD\+\_\+\+MAX72\+XX$\ast$ that referes to the MD\+\_\+\+MAX72\+XX display in which the reverse scrooling is applied \\
+\hline
+{\em c\+\_\+min} & \\
+\hline
+{\em c\+\_\+max} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{functions_8cpp_a7b17e6ca45552d093f7221f5551d4bdb}\label{functions_8cpp_a7b17e6ca45552d093f7221f5551d4bdb}} 
+\index{functions.cpp@{functions.cpp}!test\_all\_points@{test\_all\_points}}
+\index{test\_all\_points@{test\_all\_points}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{test\_all\_points()}{test\_all\_points()}}
+{\footnotesize\ttfamily void test\+\_\+all\+\_\+points (\begin{DoxyParamCaption}\item[{MD\+\_\+\+MAX72\+XX $\ast$}]{M }\end{DoxyParamCaption})}
+
+
+
+This fonction tests all dots of the displat starting from line 0 and column 0. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em M} & a MD\+\_\+\+MAX72\+XX$\ast$ that referes to the MD\+\_\+\+MAX72\+XX display in which the dots will be print out \\
+\hline
+\end{DoxyParams}

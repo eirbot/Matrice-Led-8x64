@@ -1,0 +1,41 @@
+\hypertarget{main_8cpp}{}\doxysection{main.\+cpp File Reference}
+\label{main_8cpp}\index{main.cpp@{main.cpp}}
+{\ttfamily \#include $<$Arduino.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}caracters.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}pixel\+\_\+arts.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$MD\+\_\+\+MAX72xx.\+h$>$}\newline
+{\ttfamily \#include $<$SPI.\+h$>$}\newline
+Include dependency graph for main.\+cpp\+:
+% FIG 0
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{main_8cpp_a27f4b8b92bb590bbdb4fa2e4bad80c31}\label{main_8cpp_a27f4b8b92bb590bbdb4fa2e4bad80c31}} 
+\#define {\bfseries Max7219\+\_\+pin\+CLK}~2
+\item 
+\mbox{\Hypertarget{main_8cpp_aae0eba1f2307ccacbbc282e41789a894}\label{main_8cpp_aae0eba1f2307ccacbbc282e41789a894}} 
+\#define {\bfseries Max7219\+\_\+pin\+CS}~3
+\item 
+\mbox{\Hypertarget{main_8cpp_a35a77f429663c7449d8b9179c9ecc94a}\label{main_8cpp_a35a77f429663c7449d8b9179c9ecc94a}} 
+\#define {\bfseries Max7219\+\_\+pin\+DIN}~4
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{main_8cpp_a4fc01d736fe50cf5b977f755b675f11d}\label{main_8cpp_a4fc01d736fe50cf5b977f755b675f11d}} 
+void {\bfseries setup} ()
+\item 
+\mbox{\Hypertarget{main_8cpp_afe461d27b9c48d5921c00d521181f12f}\label{main_8cpp_afe461d27b9c48d5921c00d521181f12f}} 
+void {\bfseries loop} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{main_8cpp_afcbc63417182fb0589f21b7e3c867fa6}\label{main_8cpp_afcbc63417182fb0589f21b7e3c867fa6}} 
+MD\+\_\+\+MAX72\+XX $\ast$ {\bfseries M} = new MD\+\_\+\+MAX72\+XX(M-\/$>$FC16\+\_\+\+HW, 4, 2, 3, 4)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Main file that stores the main program that will be executed the the arduino 

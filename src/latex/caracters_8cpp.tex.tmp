@@ -1,0 +1,65 @@
+\hypertarget{caracters_8cpp}{}\doxysection{caracters.\+cpp File Reference}
+\label{caracters_8cpp}\index{caracters.cpp@{caracters.cpp}}
+{\ttfamily \#include $<$MD\+\_\+\+MAX72xx.\+h$>$}\newline
+{\ttfamily \#include $<$SPI.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}functions.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}caracters.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+Include dependency graph for caracters.\+cpp\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int $\ast$ \mbox{\hyperlink{caracters_8cpp_a0349f0a3cdd30a403562a06e1c12496f}{write\+\_\+letter}} (char letter)
+\begin{DoxyCompactList}\small\item\em Fonction that returns an int$\ast$ buffer in which is stored the drawing of the ASCII caracters enter in parameter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{caracters_8cpp_a2d54d93f5d6adca78135c4e0cb114806}{write\+\_\+word}} (MD\+\_\+\+MAX72\+XX $\ast$M, String w, int mod, int way, int c\+\_\+min, int c\+\_\+max)
+\begin{DoxyCompactList}\small\item\em Fonction that draws on a MD\+\_\+\+MAX72\+XX display a String entered in parameters in the specified mod. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+File in which there functions that generates and draws ASCII caracters for/on a MD\+\_\+\+MAX72\+XX displays 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{caracters_8cpp_a0349f0a3cdd30a403562a06e1c12496f}\label{caracters_8cpp_a0349f0a3cdd30a403562a06e1c12496f}} 
+\index{caracters.cpp@{caracters.cpp}!write\_letter@{write\_letter}}
+\index{write\_letter@{write\_letter}!caracters.cpp@{caracters.cpp}}
+\doxysubsubsection{\texorpdfstring{write\_letter()}{write\_letter()}}
+{\footnotesize\ttfamily int$\ast$ write\+\_\+letter (\begin{DoxyParamCaption}\item[{char}]{letter }\end{DoxyParamCaption})}
+
+
+
+Fonction that returns an int$\ast$ buffer in which is stored the drawing of the ASCII caracters enter in parameter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em letter} & the ASCII code associated to a caracter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+buffer the buffer associated with the ASCII code entered in parameter 
+\end{DoxyReturn}
+\mbox{\Hypertarget{caracters_8cpp_a2d54d93f5d6adca78135c4e0cb114806}\label{caracters_8cpp_a2d54d93f5d6adca78135c4e0cb114806}} 
+\index{caracters.cpp@{caracters.cpp}!write\_word@{write\_word}}
+\index{write\_word@{write\_word}!caracters.cpp@{caracters.cpp}}
+\doxysubsubsection{\texorpdfstring{write\_word()}{write\_word()}}
+{\footnotesize\ttfamily void write\+\_\+word (\begin{DoxyParamCaption}\item[{MD\+\_\+\+MAX72\+XX $\ast$}]{M,  }\item[{String}]{w,  }\item[{int}]{mod,  }\item[{int}]{way,  }\item[{int}]{c\+\_\+min,  }\item[{int}]{c\+\_\+max }\end{DoxyParamCaption})}
+
+
+
+Fonction that draws on a MD\+\_\+\+MAX72\+XX display a String entered in parameters in the specified mod. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em M} & a MD\+\_\+\+MAX72\+XX$\ast$ that referes to the MD\+\_\+\+MAX72\+XX display in which the String will b print out \\
+\hline
+{\em w} & the String that will be printed out \\
+\hline
+{\em mod} & the mod of display, if 0 the String will scrool on the display, with 1 it will be a fixed print starting on c\+\_\+max column \\
+\hline
+{\em way} & choose in which way the String will scroll, 0 from c\+\_\+min to c\+\_\+max (right to left), 1 from c\+\_\+max to c\+\_\+min (left to right) \\
+\hline
+{\em c\+\_\+min} & the minimum column on which the String will be displayed \\
+\hline
+{\em c\+\_\+max} & the maximum column on which the String will be displayed \\
+\hline
+\end{DoxyParams}
